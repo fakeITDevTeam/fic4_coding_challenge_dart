@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:test/expect.dart';
+
 // luas persegi panjang --definition start
 class PersegiPanjang {
   double panjang;
@@ -90,4 +92,15 @@ void main(List<String> arguments) {
     }
   }
   print("$deretGanjil = $sumDeretGanjil");
+
+  print("----------------");
+  print("masukkan kata untuk diubah ke kapital:");
+  String kata = stdin.readLineSync();
+  String hasil = castToCapital(kata);
+  print("Hasil: $hasil");
+}
+
+String castToCapital(String wCaps) {
+  String hasil = wCaps.toUpperCase();
+  return hasil;
 }
