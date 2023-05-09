@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'package:test/expect.dart';
-
 // luas persegi panjang --definition start
 class PersegiPanjang {
   double panjang;
@@ -86,7 +84,7 @@ void main(List<String> arguments) {
       if (deretGanjil == "") {
         deretGanjil = deretGanjil + i.toString();
       } else {
-        deretGanjil = deretGanjil + ' + ' + i.toString();
+        deretGanjil = '$deretGanjil + ${i.toString()}';
       }    
       sumDeretGanjil+=i;   
     }
